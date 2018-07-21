@@ -7,7 +7,6 @@ const Navbar = () => {
       NAVBAR COMPONENT
       <ul>
         <Link to="/">
-          {" "}
           <li>Home</li>
         </Link>
 

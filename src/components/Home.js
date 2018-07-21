@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar'
+import Countdown from './Countdown';
+import Footer from './Footer';
+
+
+
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -7,7 +12,10 @@ class Home extends Component {
     }
     render() { 
         return ( <div>
-            <Navbar/></div> );
+            <Navbar/>
+            <Countdown/>
+            <Footer/>
+            </div> );
     }
 }
  

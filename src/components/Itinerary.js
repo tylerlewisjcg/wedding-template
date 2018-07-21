@@ -1,6 +1,9 @@
 import React from 'react';
+import Navbar from './Navbar';
+
 const Itinerary = () => {
     return ( <div>
+        <Navbar/>
 August 24th:
 
 Rexburg, ID LDS Temple
