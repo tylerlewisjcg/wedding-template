@@ -1,34 +1,39 @@
-import React, { Component } from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import Countdown from './components/Countdown';
+import React, { Component } from "react";
+import Home from "./components/Home"
+import { Switch, Route } from "react-router-dom";
 import Bride from './components/Bride';
+import Directions from './components/Directions';
 import Groom from './components/Groom';
+import Guestbook from './components/Guestbook';
+import Itinerary from './components/Itinerary';
 import OurStory from './components/OurStory';
-import Footer from './components/Footer';
-import {HashRouter} from 'react-router-dom;'
+import PhotoAlbum from './components/PhotoAlbum';
+import RegistryLinks from './components/RegistryLinks';
+import RSVP from './components/RSVP';
+import WeddingParty from './components/WeddingParty';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      <HashRouter>
-      <Navbar/>
-      <Countdown/>
-     Jennifer and Jordan's Wedding Website
-     <p>Features:</p>
-     <ul>
-<li>directions/addresses/google maps</li>
-<li>post pictures of the wedding</li>
-<li>email reminders/text reminders for guests</li>
-<li>text notifications to bride and groom when someone RSVPs</li>
+      <Route
+        path="/"
+        render={() => (
+          <Switch>
+            <Route exact path="/" component={Home} />
+    <Route path="/bride" component={ Bride } />
+    <Route path="/directions" component={ Directions } />
+    <Route path="/groom" component={ Groom } />
+    <Route path="/guestbook" component={ Guestbook } />
+    <Route path="/itinerary" component={ Itinerary } />
+    <Route path="/ourstory" component={ OurStory } />
+    <Route path="/photoalbum" component={ PhotoAlbum } />
+    <Route path="/registrylinks" component={ RegistryLinks } />
+    <Route path="/rsvp" component={ RSVP } />
+    <Route path="/weddingparty" component={ WeddingParty } />
 
-     </ul>
-     <OurStory/>
-<Bride/>
-<Groom/>
-     <Footer/>
-     </HashRouter>
-      </div>
+          </Switch>
+        )}
+      />
     );
   }
 }
