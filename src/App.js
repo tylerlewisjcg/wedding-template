@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './App.css';
 import Home from "./components/Home";
 import { Switch, Route } from "react-router-dom";
 import Bride from "./components/Bride";
