@@ -16,7 +16,7 @@ class Countdown extends Component {
       }
     
      countdown(){
-         let countDownDate = new Date('Aug 25, 2018 9:00:00').getTime();
+         let countDownDate = new Date('Aug 24, 2018 10:00:00').getTime();
          let now = this.state.now
         let timeRemaining = countDownDate - now;
         let days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
