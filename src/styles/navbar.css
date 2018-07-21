@@ -1,0 +1,27 @@
+.navbar{
+width: 100vw;
+height: 100px;
+background-color: #fffdd0;
+margin: 0px;
+}
+.nav_links{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+a:link {
+    text-decoration: none;
+   
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #B2968D
+}
+
+li {
+    color: #01796F
+}
+li:hover{
+    color: #B2968D
+}
