@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from './Navbar';
+
 
 const RSVP = () => {
     return ( <div>
-<Navbar/>
+Click here To RSVP
         
     </div> );
 }

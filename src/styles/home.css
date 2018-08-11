@@ -1,0 +1,7 @@
+.main-picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    z-index: 10000;
+}
